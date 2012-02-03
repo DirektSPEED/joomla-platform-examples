@@ -35,7 +35,7 @@ jimport('joomla.application.web');
 * @package  Joomla.Examples
 * @since    11.3
 */
-class DetectClient extends JWeb
+class DetectClient extends JApplicationWeb
 {
 	/**
 	 * Overrides the parent doExecute method to run the web application.
@@ -114,4 +114,4 @@ class DetectClient extends JWeb
 
 // Instantiate the application object, passing the class name to JWeb::getInstance
 // and use chaining to execute the application.
-JWeb::getInstance('DetectClient')->execute();
+JApplicationWeb::getInstance('DetectClient')->execute();

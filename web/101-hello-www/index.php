@@ -32,7 +32,7 @@ jimport('joomla.application.web');
 * @package  Joomla.Examples
 * @since    11.3
 */
-class HelloWww extends JWeb
+class HelloWww extends JApplicationWeb
 {
 	/**
 	 * Overrides the parent doExecute method to run the web application.
@@ -63,4 +63,4 @@ class HelloWww extends JWeb
 
 // Instantiate the application object, passing the class name to JWeb::getInstance
 // and use chaining to execute the application.
-JWeb::getInstance('HelloWww')->execute();
+JApplicationWeb::getInstance('HelloWww')->execute();

@@ -37,7 +37,7 @@ JError::setErrorHandling(E_ERROR, 'echo');
 * @package  Joomla.Examples
 * @since    11.3
 */
-class FlickrFeed extends JWeb
+class FlickrFeed extends JApplicationWeb
 {
 	/**
 	 * Overrides the parent doExecute method to run the web application.
@@ -99,7 +99,7 @@ class FlickrFeed extends JWeb
 }
 
 // Instantiate the application.
-$application = JWeb::getInstance('FlickrFeed');
+$application = JApplicationWeb::getInstance('FlickrFeed');
 
 // Initialise the application.
 $application->initialise();

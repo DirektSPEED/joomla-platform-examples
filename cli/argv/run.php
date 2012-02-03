@@ -31,7 +31,7 @@ jimport('joomla.application.cli');
  * @package  Joomla.Examples
  * @since    11.3
  */
-class Argv extends JCli
+class Argv extends JApplicationCli
 {
 	/**
 	 * Execute the application.
@@ -131,4 +131,4 @@ class Argv extends JCli
 
 // Instantiate the application object, passing the class name to JCli::getInstance
 // and use chaining to execute the application.
-JCli::getInstance('Argv')->execute();
+JApplicationCli::getInstance('Argv')->execute();
