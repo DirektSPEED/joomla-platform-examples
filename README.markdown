@@ -10,6 +10,10 @@ Clone or download the https://github.com/joomla/joomla-platform and
 https://github.com/joomla/joomla-platform-examples under the same parent folder.
 Then copy the ``bootstrap.dist.php`` file to ``bootstrap.php``.
 
+For example, if your parent folder is called ``platform-test``, you would have the following
+folders under the ``platform-test`` folder: ``cli, joomla-platform``, and ``web``.
+You would also have a file called ``bootstrap.php`` in that folder.
+
 Running Examples
 ================
 
@@ -78,3 +82,9 @@ detect-client
 
 This is a simple web example that shows you how to detect the client properties (browser, platform, etc)
 that your application is being viewed in.
+
+Flickr Stream
+------------
+
+This is a simple example of a web application to display a Flickr stream. It also illustrates how to use a
+templater (or theme) in a web application.
