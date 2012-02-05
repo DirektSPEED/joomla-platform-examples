@@ -35,7 +35,7 @@ jimport('joomla.application.cli');
  * @package  Joomla.Examples
  * @since    11.3
  */
-class ShowConfig extends JCli
+class ShowConfig extends JApplicationCli
 {
 	/**
 	 * Execute the application.
@@ -122,4 +122,4 @@ class ShowConfig extends JCli
 
 // Instantiate the application object, passing the class name to JCli::getInstance
 // and use chaining to execute the application.
-JCli::getInstance('ShowConfig')->execute();
+JApplicationCli::getInstance('ShowConfig')->execute();

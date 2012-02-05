@@ -37,7 +37,7 @@ jimport('joomla.application.cli');
  * @package  Joomla.Examples
  * @since    11.3
  */
-class HelloWorld extends JCli
+class HelloWorld extends JApplicationCli
 {
 	/**
 	 * Execute the application.
@@ -57,4 +57,4 @@ class HelloWorld extends JCli
 
 // Instantiate the application object, passing the class name to JCli::getInstance
 // and use chaining to execute the application.
-JCli::getInstance('HelloWorld')->execute();
+JApplicationCli::getInstance('HelloWorld')->execute();

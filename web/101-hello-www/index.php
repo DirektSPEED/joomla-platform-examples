@@ -63,4 +63,4 @@ class HelloWww extends JApplicationWeb
 
 // Instantiate the application object, passing the class name to JWeb::getInstance
 // and use chaining to execute the application.
-JWeb::getInstance('HelloWww')->execute();
+JApplicationWeb::getInstance('HelloWww')->execute();

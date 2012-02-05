@@ -39,7 +39,7 @@ jimport('joomla.application.cli');
  * @package  Joomla.Examples
  * @since    11.3
  */
-class CronPluginApp extends JCli
+class CronPluginApp extends JApplicationCli
 {
 	/**
 	 * A database object for the application to use.
@@ -55,8 +55,6 @@ class CronPluginApp extends JCli
 	 * This constructor invokes the parent JCli class constructor,
 	 * and then creates a connector to the database so that it is
 	 * always available to the application when needed.
-	 *
-	 * @return  void
 	 *
 	 * @since   11.3
 	 * @throws  JDatabaseException
@@ -239,7 +237,7 @@ try
 {
 	// Instantiate the application object, passing the class name to JCli::getInstance
 	// and use chaining to execute the application.
-	JCli::getInstance('CronPluginApp')->execute();
+	JApplicationCli::getInstance('CronPluginApp')->execute();
 }
 catch (Exception $e)
 {

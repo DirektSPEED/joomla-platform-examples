@@ -37,7 +37,7 @@ JLoader::register('ElephantMarkdown', __DIR__.'/includes/markdown.php');
  *
  * @package  Joomla.Examples
  */
-class Changelog extends JCli
+class Changelog extends JApplicationCli
 {
 	/**
 	 * Execute the application.
@@ -199,7 +199,7 @@ class Changelog extends JCli
 // Catch any exceptions thrown.
 try
 {
-	JCli::getInstance('Changelog')->execute();
+	JApplicationCli::getInstance('Changelog')->execute();
 }
 catch (Exception $e)
 {
