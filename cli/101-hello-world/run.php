@@ -26,13 +26,13 @@ define('JPATH_BASE', dirname(__FILE__));
 // Bootstrap the application.
 require dirname(dirname(dirname(__FILE__))).'/bootstrap.php';
 
-// Import the JCli class from the platform.
+// Import the JApplicationCli class from the platform.
 jimport('joomla.application.cli');
 
 /**
  * A "hello world" command line application class.
  *
- * Simple command line applications extend the JCli class.
+ * Simple command line applications extend the JApplicationCli class.
  *
  * @package  Joomla.Examples
  * @since    11.3
@@ -55,6 +55,6 @@ class HelloWorld extends JApplicationCli
 	}
 }
 
-// Instantiate the application object, passing the class name to JCli::getInstance
+// Instantiate the application object, passing the class name to JApplicationCli::getInstance
 // and use chaining to execute the application.
 JApplicationCli::getInstance('HelloWorld')->execute();

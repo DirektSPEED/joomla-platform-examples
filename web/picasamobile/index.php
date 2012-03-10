@@ -1,6 +1,6 @@
 <?php
 /**
-* An example JWeb application built on the Joomla Platform.
+* An example JApplicationWeb application built on the Joomla Platform.
 *
 * To run this example, copy or soft-link this folder to your web server tree.
  * example written by mqueme with code taken from joomla examples
@@ -25,13 +25,13 @@ ini_set('display_errors', true);
 // Bootstrap the application.
 require dirname(__FILE__).'/bootstrap.php';
 
-// Import the JWeb class from the platform.
+// Import the JApplicationWeb class from the platform.
 jimport('joomla.application.web');
 // Set error handler to echo
 JError::setErrorHandling(E_ERROR, 'echo');
 
 /**
-* An example JWeb application class.
+* An example JApplicationWeb application class.
 *
 * @package Joomla.Examples
 * @since 11.3

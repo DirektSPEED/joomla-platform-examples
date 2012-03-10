@@ -1,6 +1,6 @@
 <?php
 /**
- * An example JWeb application built on the Joomla Platform.
+ * An example JApplicationWeb application built on the Joomla Platform.
  *
  * To run this example, copy or soft-link this folder to your web server tree.
  *
@@ -23,11 +23,11 @@ ini_set('display_errors', true);
 // Bootstrap the application.
 require dirname(dirname(dirname(__FILE__))).'/bootstrap.php';
 
-// Import the JWeb class from the platform.
+// Import the JApplicationWeb class from the platform.
 jimport('joomla.application.web');
 
 /**
-* An example JWeb application class.
+* An example JApplicationWeb application class.
 *
 * This example shows how to use the setBody and appendBody methods,
 * as well as access the client information.
@@ -65,12 +65,12 @@ class DetectClient extends JApplicationWeb
 		// Set up the beginning of the HTML repsonse.
 		$this->appendBody('<html>')
 			->appendBody('<head>')
-			->appendBody('<title>JWeb - Detect Client</title>')
+			->appendBody('<title>JApplicationWeb - Detect Client</title>')
 			->appendBody('</head>')
 			->appendBody('<body style="font-family:verdana;">');
 
 		// Introduce the page.
-		$this->appendBody('<p>Welcome to the Joomla! Platform&apos;s <code style="font-size:140%">JWeb</code> class.</p>');
+		$this->appendBody('<p>Welcome to the Joomla! Platform&apos;s <code style="font-size:140%">JApplicationWeb</code> class.</p>');
 
 		// Start a list.
 		$this->appendBody('<ul>');
@@ -112,6 +112,6 @@ class DetectClient extends JApplicationWeb
 	}
 }
 
-// Instantiate the application object, passing the class name to JWeb::getInstance
+// Instantiate the application object, passing the class name to JApplicationWeb::getInstance
 // and use chaining to execute the application.
 JApplicationWeb::getInstance('DetectClient')->execute();
