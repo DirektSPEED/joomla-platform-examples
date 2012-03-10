@@ -23,9 +23,6 @@ ini_set('display_errors', true);
 // Bootstrap the application.
 require dirname(dirname(dirname(__FILE__))).'/bootstrap.php';
 
-// Import the JApplicationWeb class from the platform.
-jimport('joomla.application.web');
-
 /**
 * An example JApplicationWeb application class.
 *

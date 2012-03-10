@@ -25,8 +25,6 @@ ini_set('display_errors', true);
 // Bootstrap the application.
 require dirname(__FILE__).'/bootstrap.php';
 
-// Import the JApplicationWeb class from the platform.
-jimport('joomla.application.web');
 // Set error handler to echo
 JError::setErrorHandling(E_ERROR, 'echo');
 

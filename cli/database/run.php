@@ -27,9 +27,6 @@ define('JPATH_BASE', dirname(__FILE__));
 // Bootstrap the application.
 require dirname(dirname(dirname(__FILE__))).'/bootstrap.php';
 
-// Import the JApplicationCli class from the platform.
-jimport('joomla.application.cli');
-
 /**
  * An example command line application class.
  *
