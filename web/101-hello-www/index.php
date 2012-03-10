@@ -1,6 +1,6 @@
 <?php
 /**
- * An example JWeb application built on the Joomla Platform.
+ * An example JApplicationWeb application built on the Joomla Platform.
  *
  * To run this example, copy or soft-link this folder to your web server tree.
  *
@@ -23,11 +23,8 @@ ini_set('display_errors', true);
 // Bootstrap the application.
 require dirname(dirname(dirname(__FILE__))).'/bootstrap.php';
 
-// Import the JWeb class from the platform.
-jimport('joomla.application.web');
-
 /**
-* An example JWeb application class.
+* An example JApplicationWeb application class.
 *
 * @package  Joomla.Examples
 * @since    11.3
@@ -47,7 +44,7 @@ class HelloWww extends JApplicationWeb
 	{
 		// This application will just output a simple HTML document.
 		// Use the setBody method to set the output.
-		// JWeb will take care of all the headers and such for you.
+		// JApplicationWeb will take care of all the headers and such for you.
 
 		$this->setBody('<html>
 			<head>
@@ -61,6 +58,6 @@ class HelloWww extends JApplicationWeb
 	}
 }
 
-// Instantiate the application object, passing the class name to JWeb::getInstance
+// Instantiate the application object, passing the class name to JApplicationWeb::getInstance
 // and use chaining to execute the application.
 JApplicationWeb::getInstance('HelloWww')->execute();

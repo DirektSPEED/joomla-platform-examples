@@ -24,8 +24,6 @@ define('JPATH_BASE', dirname(__FILE__));
 // Bootstrap the application.
 require dirname(dirname(dirname(__FILE__))).'/bootstrap.php';
 
-jimport('joomla.application.cli');
-
 // Register the markdown parser class so it's loaded when needed.
 JLoader::register('ElephantMarkdown', __DIR__.'/includes/markdown.php');
 

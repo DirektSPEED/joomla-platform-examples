@@ -27,9 +27,6 @@ define('JPATH_BASE', dirname(__FILE__));
 // Bootstrap the application.
 require dirname(dirname(dirname(__FILE__))).'/bootstrap.php';
 
-// Import the JCli class from the platform.
-jimport('joomla.application.cli');
-
 /**
  * An example command line application class.
  *
@@ -52,7 +49,7 @@ class DatabaseApp extends JApplicationCli
 	/**
 	 * Class constructor.
 	 *
-	 * This constructor invokes the parent JCli class constructor,
+	 * This constructor invokes the parent JApplicationCli class constructor,
 	 * and then creates a connector to the database so that it is
 	 * always available to the application when needed.
 	 *
@@ -110,7 +107,7 @@ class DatabaseApp extends JApplicationCli
 // Wrap the execution in a try statement to catch any exceptions thrown anywhere in the script.
 try
 {
-	// Instantiate the application object, passing the class name to JCli::getInstance
+	// Instantiate the application object, passing the class name to JApplicationCli::getInstance
 	// and use chaining to execute the application.
 	JApplicationCli::getInstance('DatabaseApp')->execute();
 }

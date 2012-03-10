@@ -24,9 +24,6 @@ define('JPATH_BASE', dirname(__FILE__));
 // Bootstrap the application.
 require dirname(dirname(dirname(__FILE__))).'/bootstrap.php';
 
-// Import the JCli class from the platform.
-jimport('joomla.application.cli');
-
 /**
  * An example command line application class.
  *
@@ -50,7 +47,7 @@ class ShowConfig extends JApplicationCli
 		$this->out();
 		$this->out('Configuration settings loaded from configuration.php:');
 
-		// JCli will automatically look for and load 'configuration.php'.
+		// JApplicationCli will automatically look for and load 'configuration.php'.
 		// Use the 'get' method to access any configuration properties.
 		$this->out(
 			sprintf(
@@ -120,6 +117,6 @@ class ShowConfig extends JApplicationCli
 	}
 }
 
-// Instantiate the application object, passing the class name to JCli::getInstance
+// Instantiate the application object, passing the class name to JApplicationCli::getInstance
 // and use chaining to execute the application.
 JApplicationCli::getInstance('ShowConfig')->execute();

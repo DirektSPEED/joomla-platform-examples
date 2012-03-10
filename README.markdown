@@ -26,7 +26,7 @@ these up is to soft link or completely copy the folder into your web server docu
 Command Line Applications
 =========================
 
-The examples found in the ``cli`` folder are all based on the new ``JCli`` class.
+The examples found in the ``cli`` folder are all based on the new ``JApplicationCli`` class.
 The is a base level class purpose built for running applications from the command line.
 
 101-hello-world
@@ -48,7 +48,7 @@ that is used in news annoucements. It provides an example of how to use the ``JH
 cron-plugins
 ------------
 
-This application show you how you could use JCli to build a cron manager for Joomla CMS plugins.
+This application show you how you could use JApplicationCli to build a cron manager for Joomla CMS plugins.
 The plugins would be configured via parameters in the CMS itself, but run via this command line
 application. It makes use of JLog for logging activity in rolling daily log files. The
 application would simply be added to any available scheduling software and run at appropriate
@@ -68,7 +68,7 @@ show-config
 Web Applications
 ================
 
-The examples found in the ``web`` folder are all based on the new ``JWeb`` class.
+The examples found in the ``web`` folder are all based on the new ``JApplicationWeb`` class.
 This is a base level class purpose built to serve web content for a range of applications
 including, but not limited to, web services, standalone web sites and CMS's.
 
